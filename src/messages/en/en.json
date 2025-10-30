@@ -1,0 +1,63 @@
+{
+    "common":{
+        "loading": "Loading...",
+        "error": "Something went wrong.",
+        "added_successfully": "Added Successfully",
+        "updated_successfully": "Updated Successfully",
+        "error_occurred": "Error Occurred"
+    },
+    "components":{
+        "layout":{
+            "header":{
+                "home": "Home",
+                "packages": "Packages",
+                "leaderboards": "Leaderboards",
+                "games": "Games",
+                "history":" History",
+                "login": "Login",
+                "logout": "Logout",
+                "register": "Register",
+                "visit-profile":"Visit Profile"
+            },
+            "sidebar":{
+                
+            }
+        }
+    },
+    "pages":{
+        "history":{
+                "trivia":{
+                    "columns":{
+                        "date": "Date",
+                        "points": "Points",
+                        "coins_spent": "Coins Spent",
+                        "joker": "Joker",
+                        "outcomes": "Outcomes",
+                        "time": "Time"
+                    }
+                },
+                "predictions":{
+                    "columns":{
+                        "date": "Date",
+                        "match": "Match",
+                        "prediction":"Prediction",
+                        "joker": "Joker",
+                        "result":"Result",
+                        "points":"Points",
+                        "coins_point":"Coins Point",
+                        "time": "Time"
+                    }
+                },
+                "shoot":{
+                    "columns":{
+                        "date": "Date",
+                        "points": "Points",
+                        "coins_spent": "Coins Spent",
+                        "joker": "Joker",
+                        "outcomes": "Outcomes",
+                        "time": "Time"
+                    }
+                }
+        }
+    }
+}

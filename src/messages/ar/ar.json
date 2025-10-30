@@ -1,0 +1,26 @@
+{
+    "common":{
+        "loading": "Loading...",
+        "error": "Something went wrong.",
+        "added_successfully": "تمت الإضافة بنجاح",
+        "updated_successfully": "تم التحديث بنجاح",
+        "error_occurred": "حدث خطأ"
+    },
+    "components":{
+        "layout":{
+            "header":{
+                "home": "Home",
+                "packages": "Packages",
+                "leaderboards": "Leaderboards",
+                "games": "Games",
+                "history":" History",
+                "login": "Login",
+                "logout": "Logout",
+                "register": "Register"
+            },
+            "sidebar":{
+                
+            }
+        }
+    }
+}
