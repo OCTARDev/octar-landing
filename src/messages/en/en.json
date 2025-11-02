@@ -1,63 +1,42 @@
 {
     "common":{
-        "loading": "Loading...",
-        "error": "Something went wrong.",
-        "added_successfully": "Added Successfully",
-        "updated_successfully": "Updated Successfully",
-        "error_occurred": "Error Occurred"
+        "octar":"OCTAR"
     },
     "components":{
         "layout":{
             "header":{
-                "home": "Home",
-                "packages": "Packages",
-                "leaderboards": "Leaderboards",
-                "games": "Games",
-                "history":" History",
-                "login": "Login",
-                "logout": "Logout",
-                "register": "Register",
-                "visit-profile":"Visit Profile"
+                "octar":"OCTAR Education"
             },
             "sidebar":{
-                
+                "octar":"OCTAR Education"
+            },
+            "footer":{
+                "ed-circle":"Ed-Circle. All rights reserved.",
+                "school-rights":"OCTAR SCHOOL. All rights reserved.",
+                "contact-us":"Contact Us",
+                "why-octar":"Why OCTAR?",
+                "octar-school":"OCTAR School",
+                "octar-home":"OCTAR Home",
+                "meet-us":"Meet Us"
             }
         }
     },
     "pages":{
-        "history":{
-                "trivia":{
-                    "columns":{
-                        "date": "Date",
-                        "points": "Points",
-                        "coins_spent": "Coins Spent",
-                        "joker": "Joker",
-                        "outcomes": "Outcomes",
-                        "time": "Time"
-                    }
+        "home":{
+            "hero":{
+                "title":"The Future of Augmented Reality Learning with",
+                "body":"Discover a new world of interactive learning with the OCTAR AR app - where imagination meets technology."
+            },
+            "cards":{
+                "home":{
+                    "title":"OCTAR For Home",
+                    "button":"Start Learning At Home Now"
                 },
-                "predictions":{
-                    "columns":{
-                        "date": "Date",
-                        "match": "Match",
-                        "prediction":"Prediction",
-                        "joker": "Joker",
-                        "result":"Result",
-                        "points":"Points",
-                        "coins_point":"Coins Point",
-                        "time": "Time"
-                    }
-                },
-                "shoot":{
-                    "columns":{
-                        "date": "Date",
-                        "points": "Points",
-                        "coins_spent": "Coins Spent",
-                        "joker": "Joker",
-                        "outcomes": "Outcomes",
-                        "time": "Time"
-                    }
+                "school":{
+                    "title":"OCTAR For Schools",
+                    "button":"Register For Schools Now"
                 }
+            }
         }
     }
 }

@@ -30,7 +30,7 @@ export default function Sidebar({isOpen,toggleMenu}:Props) {
                 className='w-12 h-auto' 
                 alt='logo'
                 />
-                <span className='font-bold  text-lg text-primaryA1'>OCTAR Education</span>
+                <span className='font-bold  text-lg text-primaryA1'>{t("octar")}</span>
             </Link>
             <span className='cursor-pointer  text-primaryA1 hover:text-secondaryA1  rounded-full' onClick={toggleMenu}>
                 < RiArrowGoBackFill size={28}/>

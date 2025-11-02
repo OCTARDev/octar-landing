@@ -2,28 +2,30 @@ import Image from 'next/image'
 import React from 'react'
 import schoolCardImg from "@/assets/images/home/home-school-card.png";
 import octareduCardImg from "@/assets/images/home/home-octaredu-card.png";
+import { useTranslations } from 'next-intl';
 
 
 export default function HomeCardsSection() {
+    const t = useTranslations("pages.home.cards");
   return (
     <section>
-      <div className={`max-w-6xl mx-auto flex justify-center flex-wrap gap-8 p-4 md:p-10`}>
+      <div className={`max-w-8xl mx-auto flex justify-center flex-wrap gap-12 p-4 md:px-6 md:py-2`}>
         <div>
             <Card 
             logo='/logo-pink.svg'
             img={octareduCardImg}
-            title='OCTAR for Home'
-            button='Start learning at home now'
+            title={t("home.title")}
+            button={t("home.button")}
             type='octaredu'
-            link='https://octaredu.com/en/home/'
+            link='https://home.octaredu.com/'
             />
         </div>
         <div>
             <Card 
             logo='/logo-blue.svg'
             img={schoolCardImg}
-            title='OCTAR for Schools'
-            button='Register for schools now'
+            title={t("school.title")}
+            button={t("school.button")}
             type='school'
             link='https://school.octaredu.com/en/home'
             />
@@ -71,7 +73,7 @@ const Card = ({
                     width={400}
                     height={400}
                     quality={100}
-                    className='w-[200px] h-auto object-contain'
+                    className='w-[100px] h-auto object-contain'
                     />
                 </div>
                 {/* Card Title */}

@@ -1,25 +1,41 @@
 {
-    "common":{
-        "loading": "Loading...",
-        "error": "Something went wrong.",
-        "added_successfully": "تمت الإضافة بنجاح",
-        "updated_successfully": "تم التحديث بنجاح",
-        "error_occurred": "حدث خطأ"
+    "common": {
+        "octar": "أوكتار"
     },
-    "components":{
-        "layout":{
-            "header":{
-                "home": "Home",
-                "packages": "Packages",
-                "leaderboards": "Leaderboards",
-                "games": "Games",
-                "history":" History",
-                "login": "Login",
-                "logout": "Logout",
-                "register": "Register"
+    "components": {
+        "layout": {
+            "header": {
+                "octar": "أوكتار للتعليم"
             },
-            "sidebar":{
-                
+            "sidebar": {
+                "octar": "أوكتار للتعليم"
+            },
+            "footer": {
+                "ed-circle": "إد-سيركل. جميع الحقوق محفوظة.",
+                "school-rights": "مدرسة أوكتار. جميع الحقوق محفوظة.",
+                "contact-us": "تواصل معنا",
+                "why-octar": "لماذا أوكتار؟",
+                "octar-school": "مدرسة أوكتار",
+                "octar-home": "أوكتار في المنزل",
+                "meet-us": "قابلنا"
+            }
+        }
+    },
+    "pages": {
+        "home": {
+            "hero": {
+                "title": "مستقبل التعلم بالواقع المعزز مع",
+                "body": "اكتشف عالماً جديداً من التعلم التفاعلي مع تطبيق أوكتار AR - حيث تلتقي الخيال بالتكنولوجيا."
+            },
+            "cards": {
+                "home": {
+                    "title": "أوكتار للمنزل",
+                    "button": "ابدأ التعلم في المنزل الآن"
+                },
+                "school": {
+                    "title": "أوكتار للمدارس",
+                    "button": "سجّل للمدارس الآن"
+                }
             }
         }
     }

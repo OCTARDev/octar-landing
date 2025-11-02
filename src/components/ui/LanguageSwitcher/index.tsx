@@ -18,8 +18,8 @@ const LanguageSwitcher = ({isUp=false,className=""}) => {
 
   // Language display mapping
   const languageMap = {
-    en: { name: "English", nativeName: "English", flag: "/layout/uk-flag.webp" },
-    ar: { name: "Arabic", nativeName: "العربية", flag: "/layout/sa-flag.webp" }
+    en: { name: "English", nativeName: "EN", flag: "/layout/uk-flag.webp" },
+    ar: { name: "Arabic", nativeName: "ع", flag: "/layout/sa-flag.webp" }
   };
 
 
@@ -87,7 +87,7 @@ const LanguageSwitcher = ({isUp=false,className=""}) => {
         aria-label="Select language"
       >
         <div className="flex items-center gap-2">
-          <span className="flex-shrink-0 ">
+          {/* <span className="flex-shrink-0 ">
             <Image 
             width={1000}
             height={1000}
@@ -95,9 +95,9 @@ const LanguageSwitcher = ({isUp=false,className=""}) => {
             alt={currentLanguage?.name || "Language"}
             className="w-8 rounded-sm object-cover"
             />
-          </span>
+          </span> */}
           <span className="font-bold tracking-wider text-base text-primaryA1">
-            {currentLanguage?.name}
+            {currentLanguage?.nativeName}
           </span>
         </div>
       </button>
@@ -110,8 +110,8 @@ const LanguageSwitcher = ({isUp=false,className=""}) => {
         initial={{opacity:0,x:100}}
         className={`
           ${isUp ? "bottom-full mb-1":"top-full mt-1"}
-          absolute   start-0  min-w-32 bg-neutral10
-          border border-primaryA1  
+          absolute   start-0  min-w-full bg-neutral10
+          border border-primaryA1 
          rounded-lg shadow-lg z-50 `}>
           {routing.locales.map((locale) => {
             const language = languageMap[locale];
@@ -122,7 +122,7 @@ const LanguageSwitcher = ({isUp=false,className=""}) => {
                 key={locale}
                 onClick={() => changeLanguage(locale)}
                 className={`
-                   flex items-center justify-between px-4 py-3 w-full 
+                   flex items-center justify-center px-4 py-3 w-full 
                   text-left hover:bg-indigo-700 hover:text-gray-200 rounded-lg
                   transition-colors duration-150 font-medium ${
                   isSelected 
@@ -131,8 +131,8 @@ const LanguageSwitcher = ({isUp=false,className=""}) => {
                 }`}
                 role="menuitem"
               >
-                <div className="flex items-center gap-2">
-                  <span className="flex-shrink-0">
+                <div className="flex items-center gap-2 font-bold">
+                  {/* <span className="flex-shrink-0">
                     <Image 
                     width={2000}
                     height={1500}
@@ -141,7 +141,7 @@ const LanguageSwitcher = ({isUp=false,className=""}) => {
                     quality={100}
                     className="w-8  rounded-sm object-cover"
                     />
-                  </span>
+                  </span> */}
                   <span>
                     {language?.nativeName}
                   </span>

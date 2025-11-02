@@ -41,7 +41,7 @@ export default function Header() {
         <div className='flex items-center justify-between lg:flex-grow-0 flex-grow'>
           <Link className='flex gap-3 items-center text-primaryRed' href={`/`}>
               <Image src="/logo-blue.svg" className='w-12 h-auto' alt='logo' priority width={1000} height={1000}/>
-              <span className='font-bold'>OCTAR Education</span>
+              <span className='font-bold'>{t("octar")}</span>
           </Link>
 
         </div>
