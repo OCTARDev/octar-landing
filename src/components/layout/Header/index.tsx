@@ -47,13 +47,13 @@ export default function Header() {
         </div>
         {/* Middle */}
         <div className='items-center gap-6 hidden lg:flex'>
-          <div className='flex items-center gap-2 text-primaryA1 font-bold text-sm'>
+          {/* <div className='flex items-center gap-2 text-primaryA1 font-bold text-sm'>
             <span><FaPhone className='rotate-90' size={18}/></span>
             <span>01000000</span>
-          </div>
-          <div className='flex items-center gap-2 text-primaryA1 font-bold text-sm'>
+          </div> */}
+          <div className='flex items-center gap-2 text-primaryA1 font-bold text-sm normal-case'>
             <span><IoMdMail className='' size={18}/></span>
-            <span>info@email.com</span>
+            <span>info@octaredu.com</span>
           </div>
           
         </div>

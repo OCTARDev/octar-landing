@@ -12,9 +12,9 @@ export default function Footer(){
               {/* Socials */}
               <div className=" flex justify-center items-center gap-4 text-[22px]">
                   <p className="text-base">&copy; {new Date().getFullYear()} {t("ed-circle")}  </p>
-                  <a className="hover:text-primaryA1" target="_blank" href=""><FaTwitter /></a>
-                  <a className="hover:text-primaryA1" target="_blank" href=""><FaLinkedin /></a>
-                  <a className="hover:text-primaryA1" target="_blank" href=""><FaFacebook /></a>
+                  <a className="hover:text-primaryA1" target="_blank" href="https://x.com/OCTARedu"><FaTwitter /></a>
+                  <a className="hover:text-primaryA1" target="_blank" href="https://www.linkedin.com/company/octar-edu/posts/?feedView=all"><FaLinkedin /></a>
+                  <a className="hover:text-primaryA1" target="_blank" href="https://www.facebook.com/octareducation"><FaFacebook /></a>
               </div>
               <div className="mt-8 text-center text-white">
                 <p>&copy; {new Date().getFullYear()} {t("school-rights")} </p>
@@ -23,17 +23,18 @@ export default function Footer(){
 
           {/* second column : links */}
           <div className="grid grid-cols-2 gap-3 md:gap-8 font-medium   md:text-lg">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col items-start gap-4">
               <h3>{t("contact-us")}</h3>
-              <a target="_blank" href="">{t("why-octar")}</a>
-              <a target="_blank" href="">{t("octar-school")}</a>
-              <a target="_blank" href="">{t("octar-home")}</a>
+              <p >{t("why-octar")}</p>
+              <button >{t("octar-school")}</button>
+              <button >{t("octar-home")}</button>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col items-start gap-4 text-start">
               <h3>{t("meet-us")}</h3>
-              <a target="_blank" href="">+1 (202) 860-8888</a>
-              <a target="_blank" href="">info@octar.com</a>
-              <a target="_blank" href="">205. Cairo, Egypt</a>
+              {/* <a target="_blank" href="">+1 (202) 860-8888</a> */}
+              <button >info@octaredu.com</button>
+              <p >Dubai- UAE</p>
+              <p >205. Cairo, Egypt</p>
             </div>
           </div>
         </div>
