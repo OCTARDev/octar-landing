@@ -32,7 +32,7 @@ export default function Footer(){
             <div className="flex flex-col items-start gap-4 text-start">
               <h3>{t("meet-us")}</h3>
               {/* <a target="_blank" href="">+1 (202) 860-8888</a> */}
-              <button >info@octaredu.com</button>
+              <button >info@octargo.com</button>
               <p >Dubai- UAE</p>
               <p >205. Cairo, Egypt</p>
             </div>

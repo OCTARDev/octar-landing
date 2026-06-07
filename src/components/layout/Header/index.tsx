@@ -53,7 +53,7 @@ export default function Header() {
           </div> */}
           <div className='flex items-center gap-2 text-primaryA1 font-bold text-sm normal-case'>
             <span><IoMdMail className='' size={18}/></span>
-            <span>info@octaredu.com</span>
+            <span>info@octargo.com</span>
           </div>
           
         </div>
