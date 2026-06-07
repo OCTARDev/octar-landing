@@ -17,7 +17,7 @@ export default function HomeCardsSection() {
             title={t("home.title")}
             button={t("home.button")}
             type='octaredu'
-            link='https://home.octargo.com/'
+            link='https://home.octaredu.com/'
             />
         </div>
         <div>
@@ -27,7 +27,7 @@ export default function HomeCardsSection() {
             title={t("school.title")}
             button={t("school.button")}
             type='school'
-            link='https://school.octargo.com/en/home'
+            link='https://school.octaredu.com/en/home'
             />
         </div>
       </div>
