@@ -47,6 +47,6 @@ jobs:
           script: |
             cd /home/octargo.com/nextjs
             npm ci --production
-            pm2 restart octargo || pm2 start npm --name "octargo" -- start
+            pm2 restart octargo || pm2 start npm --name "octargo" -- start -- -p 3001
             pm2 save
             echo "✅ octargo.com deployed successfully"
