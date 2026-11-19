@@ -13,6 +13,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Create isolated security branch
+        run: git switch -C security/nextjs-16-audit-fix
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -22,8 +25,8 @@ jobs:
       - name: Synchronize dependencies
         run: npm install
 
-      - name: Apply available security fixes
-        run: npm audit fix
+      - name: Apply forced security fixes
+        run: npm audit fix --force
 
       - name: Build application
         run: npm run build
@@ -33,5 +36,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add package.json package-lock.json
-          git diff --cached --quiet || git commit -m "fix: patch npm vulnerabilities"
-          git push origin HEAD:${GITHUB_REF_NAME}
+          git diff --cached --quiet || git commit -m "fix: patch npm vulnerabilities and update Next.js"
+          git push --force origin HEAD:security/nextjs-16-audit-fix
