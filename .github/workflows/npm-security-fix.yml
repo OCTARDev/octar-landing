@@ -19,8 +19,8 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Synchronize dependencies
+        run: npm install
 
       - name: Apply available security fixes
         run: npm audit fix
